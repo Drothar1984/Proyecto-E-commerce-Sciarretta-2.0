@@ -1,0 +1,298 @@
+#root {
+  
+  margin: 0 auto;
+  
+  text-align: center;
+}
+
+body{
+
+  background-image: url('/src/assets/img/imagenPrincipal.jpg');
+  background-size: cover; /*ajusta el tamaño de la imagen para cubrir todo el cuerpo */
+  background-position: center; /*centra la imagen en el cuerpo */
+  background-repeat: no-repeat; /*evita la repeticion de la imagen */
+  margin: 0; /*elimina el margen predeterminado del cuerpo */
+  padding: 0; /*elimina el relleno predeterminado del cuerpo */
+  height: 100%; /*ajusta la altura al 100% del viewport (pantalla) */
+  /*overflow: hidden;*/ /*evita que la imagen de fondo se desplace con el contenido */  
+  
+
+}
+
+/*contenedor reutilizable*/
+.ProductCardReutilizable{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around; /* Puedes ajustar según tus preferencias */
+  margin: 20px;
+  max-width: 300px;
+  max-height: auto;
+  min-height: 200px;
+  background-color: white;
+  border: 1px solid #ddd; /* Añade un borde sutil */
+  padding: 20px;
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+}
+
+
+.ProductCardReutilizable-cart{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around; /* Puedes ajustar según tus preferencias */
+  margin: 20px;
+  max-width: auto;
+  max-height: auto;
+  min-height: 200px;
+  background-color: white;
+  border: 1px solid #ddd; /* Añade un borde sutil */
+  padding: 20px;
+  width: auto; /* Ajusta el ancho según tus necesidades */ 
+  
+}
+
+.checkout-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-form-datos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  border: black 2px solid;
+}
+
+
+.checkout-form-datos > div {
+  margin-bottom: 10px; /* Espaciado entre elementos */
+}
+
+.lab-check {
+  margin-bottom: 5px; /* Espaciado entre la etiqueta y el input */
+}
+
+.input-check {
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.enviar {
+  margin-top: 10px; /* Espaciado superior para el botón */
+}
+
+.checkout-card{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around; /* Puedes ajustar según tus preferencias */
+  margin: 20px;
+  max-width: 300px;
+  max-height: auto;
+  min-height: 200px;
+  background-color: white;
+  border: 1px solid #ddd; /* Añade un borde sutil */
+  padding: 20px;
+  width: auto; /* Ajusta el ancho según tus necesidades */ 
+  
+}
+
+.ProductCardReutilizable-cart-general{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around; /* Puedes ajustar según tus preferencias */
+  margin: 20px 200px 20px 200px;
+  max-width: auto;
+  max-height: auto;
+  min-height: 200px;
+  background-color: white;
+  border: 1px solid #ddd; /* Añade un borde sutil */
+  padding: 20px;
+  width: auto; /* Ajusta el ancho según tus necesidades */ 
+}
+
+/*card individual*/
+
+.itemCart{
+  display: flex;
+  height: auto;
+  width: auto;
+  border: black 2px solid;
+  padding: 15px;
+  margin: 5px;
+}
+
+/* imagen de la card */
+
+.itemCart-img{
+  max-width: 200px;
+  max-height: 200px;
+  
+}
+
+/*card individual*/
+
+.Cart-final{
+  display: flex;
+  height: auto;
+  width: auto;
+  justify-content:center;
+  padding: 15px;
+  margin: 5px;
+}
+
+.btn-total{
+
+  margin: 10px;
+
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Plantilla ItemListContainer */
+
+.contenedor-bienvenida-principal {
+  position: relative;
+}
+
+.imagen-principal {
+  width: 100%; 
+}
+
+.texto-bienvenida {
+  
+  
+  top:15%;
+  left: 50%;
+  margin: 30px;
+  color: white; 
+  font-size: 50px;
+}
+
+
+/* plantilla alternativa de navbar */
+
+.NavBar-General {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px  10px  30px ;
+  background-color: #343a40; 
+  color: white; 
+}
+
+.NavBar-Opciones {
+  list-style: none;/*borra el puntito*/
+  display: flex;/*ubicacion dinamica*/
+  align-items: center;
+  justify-content: center;
+  margin: 0px; /*aprovecha todo el espacio*/
+  gap: 20px; 
+}
+
+.NavBar-Opcion {  
+  color: white; /*color*/
+  text-decoration: underline solid 2px white;/*subrayado */
+}
+
+.NavBar-Carrito{  
+  display: flex; /*para que este uno junto al otro*/
+  margin-left: auto;/*para que quede del lado izquierdo*/
+  
+}
+
+
+.contenedorCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around; /* Puedes ajustar según tus preferencias */
+  margin: 20px;
+  
+}
+
+
+.ProductCardReutilizable img {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho de la card */
+}
+
+
+
+/*contador "useState" de las cards de los productos */
+
+.contadorProductos{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont-contador-botones{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 10px;
+}
+
+/*plantilla ItemDetail*/
+
+.row{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+  
+}
+
+.itemDetail {
+
+  background-color: white;
+  width: 400px;
+  padding: 20px;
+
+}
